@@ -1,0 +1,6 @@
+<h1>TEACHERS LE WAGON</h1>
+<% @teachers.each do |t| %>
+  <p> <%= link_to t.name, teacher_path(t) %></p>
+  <p> <%=  t.description  %></p>
+
+<% end  %>
